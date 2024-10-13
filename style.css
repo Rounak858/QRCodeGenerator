@@ -96,9 +96,9 @@ body {
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .container{
-        width: 95%;
+        width: 100%;
         padding: 20px;
     }
 
@@ -111,13 +111,15 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) and (min-resolution: 2dppx) {
     .container{
+        width: 95%;
+        max-width: 300px;
         padding: 15px;
     }
 
     .container p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #img_box {
@@ -130,9 +132,7 @@ body {
 
     .container input, .container button {
         height: 35px;
-    }
-
-    .container button {
         font-size: 14px;
     }
+
 }
